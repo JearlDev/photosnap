@@ -1,2 +1,270 @@
+/**** Reset styles ****/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**** end of reset styles ****/
+header {
+  width: 100%;
+  height: 5rem;
+  background: #fff; }
+  header .menu {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .menu .menu-nav {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      font-weight: bold; }
+      header .menu .menu-nav .nav-link {
+        transition: all 0.18s ease-out; }
+        header .menu .menu-nav .nav-link:hover {
+          color: #b3b3b3; }
+    header .menu .menu-mobile-btn {
+      position: absolute;
+      top: 2.25rem;
+      right: calc(100vw - 95vw);
+      display: inline-block;
+      cursor: pointer;
+      transition: all 0.36s ease-out; }
+      header .menu .menu-mobile-btn .btn-line {
+        width: 1.8rem;
+        height: 0.12rem;
+        margin: 0 0 0.33rem 0;
+        background-color: #000;
+        transition: all 0.36s ease-out; }
+        header .menu .menu-mobile-btn .btn-line:nth-child(2) {
+          margin-bottom: 0; }
+      header .menu .menu-mobile-btn.close {
+        transform: rotate(180deg); }
+        header .menu .menu-mobile-btn.close .btn-line:nth-child(1) {
+          transform: rotate(45deg) translate(2px, 3px); }
+        header .menu .menu-mobile-btn.close .btn-line:nth-child(2) {
+          transform: rotate(-45deg) translate(2px, -3px); }
+
 body {
-  background: #444; }
+  height: 100%;
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1; }
+
+p {
+  line-height: 1.6; }
+  p.light-text {
+    color: #999; }
+  p.dark-text {
+    color: #666; }
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: bold; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading,
+  h4.lg-heading {
+    font-size: 2.66rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem; }
+  h1.md-heading,
+  h2.md-heading,
+  h3.md-heading,
+  h4.md-heading {
+    font-size: 1.6rem;
+    line-height: 1.04; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading,
+  h4.sm-heading {
+    font-size: 1.2rem;
+    line-height: 1.33; }
+  h1.xs-heading,
+  h2.xs-heading,
+  h3.xs-heading,
+  h4.xs-heading {
+    font-size: 0.8rem;
+    line-height: 1.33; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+.cta-btn {
+  height: 2.66rem;
+  padding: 0 1.7rem;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: all 0.18s ease-out; }
+  .cta-btn:hover {
+    background: #dfdfdf;
+    cursor: pointer;
+    color: #000; }
+
+.arrow-btn {
+  background: none;
+  padding: 0.1rem 0;
+  text-transform: uppercase; }
+  .arrow-btn.white-btn {
+    color: #fff; }
+  .arrow-btn .arrow {
+    position: relative;
+    left: 1rem;
+    top: 0.2rem;
+    transition: all 0.18s ease-out; }
+  .arrow-btn:hover {
+    text-decoration: underline;
+    cursor: pointer; }
+  .arrow-btn:hover > .arrow {
+    left: 1.5rem; }
+
+.intro {
+  width: 100%; }
+  .intro .intro-flex-1 {
+    display: flex;
+    width: 100%; }
+  .intro .intro-flex-2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse; }
+  .intro .intro-flex-3 {
+    display: flex;
+    width: 100%; }
+  .intro .intro-text {
+    height: 42.2em;
+    width: 40em;
+    padding: 0 6.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .intro .intro-text p {
+      margin-bottom: 3rem; }
+    .intro .intro-text.intro-text-1 {
+      background: #000;
+      color: #fff; }
+  .intro .intro-img {
+    height: 42.2em;
+    width: calc(100vw - 40em); }
+    .intro .intro-img .img {
+      width: 100%;
+      height: 100%; }
+      .intro .intro-img .img.img-1 {
+        background: url("../assets/home/desktop/create-and-share.jpg");
+        background-size: cover;
+        background-position: top; }
+      .intro .intro-img .img.img-2 {
+        background: url("../assets/home/desktop/beautiful-stories.jpg");
+        background-size: cover;
+        background-position: left; }
+      .intro .intro-img .img.img-3 {
+        background: url("../assets/home/desktop/designed-for-everyone.jpg");
+        background-size: cover;
+        background-position: center; }
+
+@media screen and (max-width: 1170px) {
+  header .menu {
+    width: 90%;
+    margin: none; }
+    header .menu .menu-nav {
+      width: 37.5%; }
+      header .menu .menu-nav .nav-item {
+        font-size: 13px; } }
+
+@media screen and (max-width: 870px) {
+  .intro .intro-img .img.img-1 {
+    background: url("../assets/home/tablet/create-and-share.jpg");
+    background-size: cover;
+    background-position: center; }
+  .intro .intro-img .img.img-2 {
+    background: url("../assets/home/tablet/beautiful-stories.jpg");
+    background-size: cover;
+    background-position: left; }
+  .intro .intro-img .img.img-3 {
+    background: url("../assets/home/tablet/designed-for-everyone.jpg");
+    background-size: cover;
+    background-position: center; } }
+
+@media screen and (max-width: 767.8px) {
+  .intro .intro-flex-1 {
+    flex-direction: column-reverse; }
+  .intro .intro-flex-2 {
+    flex-direction: column-reverse; }
+  .intro .intro-flex-3 {
+    flex-direction: column-reverse; }
+  .intro .intro-text {
+    width: 100%;
+    padding: 0 5vw;
+    text-align: center; }
+    .intro .intro-text.intro-text-2 {
+      padding: 0 5vw; }
+    .intro .intro-text.intro-text-3 {
+      padding: 0 5vw; }
+  .intro .intro-img {
+    height: 40em;
+    width: 100%; }
+    .intro .intro-img .img.img-1 {
+      background: url("../assets/home/mobile/create-and-share.jpg");
+      background-size: cover;
+      background-position: center; }
+    .intro .intro-img .img.img-2 {
+      background: url("../assets/home/mobile/beautiful-stories.jpg");
+      background-size: cover;
+      background-position: left; }
+    .intro .intro-img .img.img-3 {
+      background: url("../assets/home/mobile/designed-for-everyone.jpg");
+      background-size: cover;
+      background-position: center; } }
+
+@media screen and (max-width: 500px) {
+  .intro .intro-img {
+    height: 25em; } }

@@ -1,0 +1,70 @@
+//header/navigation styling
+header {
+  width: 100%;
+  height: 5rem;
+  background: #fff;
+
+  .menu {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu-nav {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      font-weight: bold;
+
+      .nav-link {
+        @include easeOut;
+
+        &:hover {
+          color: #b3b3b3;
+        }
+      }
+    }
+
+    .menu-mobile-btn {
+      position: absolute;
+      top: 2.25rem;
+      right: calc(100vw - 95vw);
+      display: inline-block;
+      cursor: pointer;
+      @include easeOutSlow;
+
+      .btn-line {
+        width: 1.8rem;
+        height: 0.12rem;
+        margin: 0 0 0.33rem 0;
+        background-color: #000;
+        @include easeOutSlow;
+
+        &:nth-child(2) {
+          margin-bottom: 0;
+        }
+      }
+
+      //Rotate Into X With Menu lines
+      &.close {
+        transform: rotate(180deg);
+
+        .btn-line {
+          //Line 1 - rotate
+          &:nth-child(1) {
+            transform: rotate(45deg) translate(2px, 3px);
+          }
+
+          //Line 2 - rotate
+          &:nth-child(2) {
+            transform: rotate(-45deg) translate(2px, -3px);
+          }
+        }
+      }
+    }
+  }
+}

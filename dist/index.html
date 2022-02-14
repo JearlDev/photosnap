@@ -3,14 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link to icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <!-- Link to fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- link to stylesheet  -->
   <link rel="stylesheet" href="css/main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <title>Frontend Mentor | Photosnap Website Challenge</title>
 </head>
 <body>
 
-  Stories
+  <header>
+    <nav class="menu">
+      <div class="menu-branding">
+        <a href="index.html">
+          <img class="menu-logo" src="assets/shared/desktop/logo.svg" alt="photosnap logo">
+        </a>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="stories.html" class="nav-link">Stories</a>
+        </li>
+        <li class="nav-item">
+          <a href="features.html" class="nav-link">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="pricing.html" class="nav-link">Pricing</a>
+        </li>
+      </ul>
+      <div class="menu-cta">
+         <a href="#" class="cta-link">
+           <button class="cta-btn">Get An Invite</button>
+         </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="intro">
+
+      <div class="intro-flex-1">
+        <div class="intro-text intro-text-1">
+          <h1 class="lg-heading">Create and share your photo stories.</h1>
+          <p class="light-text">Photosnap is a platform for photographers and visual storytellers.  We make it easy to share photos, tell stories and connect with others.</p>
+          <a href="#">
+            <button class="arrow-btn white-btn">Get An Invite <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="43" height="14"><g fill="none" fill-rule="evenodd" stroke="#fff"><path d="M0 7h41.864M35.428 1l6 6-6 6"/></g></svg></button>
+          </a>
+       </div>
+       <div class="intro-img intro-img-1">
+         <div class="img img-1"></div>
+       </div>
+      </div>
+       
+      <div class="intro-flex-2">
+        <div class="intro-text intro-text-2">
+          <h1 class="lg-heading">Beautiful stories every time.</h1>
+          <p class="dark-text">We provide design templates to ensure your stories look terrific.  Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.</p>
+          <a href="#">
+            <button class="arrow-btn">View the stories <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="43" height="14"><g fill="none" fill-rule="evenodd" stroke="#000"><path d="M0 7h41.864M35.428 1l6 6-6 6"/></g></svg></button>
+          </a>
+       </div>
+       <div class="intro-img intro-img-2">
+         <div class="img img-2"></div>
+       </div>
+      </div>
+       
+      <div class="intro-flex-3">
+        <div class="intro-text intro-text-3">
+          <h1 class="lg-heading">Designed for everyone.</h1>
+          <p class="dark-text">Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it.</p>
+          <a href="#">
+            <button class="arrow-btn">View the stories <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="43" height="14"><g fill="none" fill-rule="evenodd" stroke="#000"><path d="M0 7h41.864M35.428 1l6 6-6 6"/></g></svg></button>
+          </a>     
+       </div>
+       <div class="intro-img intro-img-3">
+         <div class="img img-3"></div>
+       </div>
+      </div>
+       
+    </section>
+
+    <!-- <section class="stories">
+
+    </section>
+
+    <section class="perks">
+
+    </section> -->
+  </main>
+
+
+
+  <!-- Stories
   Features
   Pricing
 
@@ -74,7 +161,7 @@
 
   Get an invite
 
-  Copyright 2019. All Rights Reserved
-
+  Copyright 2019. All Rights Reserved -->
+<script src="js/main.js"></script>
 </body>
 </html>

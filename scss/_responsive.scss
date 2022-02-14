@@ -1,0 +1,109 @@
+//Widescreens
+@include mediaXl {
+}
+
+//Desktops & Laptops
+@include mediaLg {
+  header {
+    .menu {
+      width: 90%;
+      margin: none;
+
+      .menu-nav {
+        width: 37.5%;
+
+        .nav-item {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+//Tablets and small laptops
+@include mediaMdL {
+  .intro {
+    .intro-img {
+      .img {
+        &.img-1 {
+          background: url("../assets/home/tablet/create-and-share.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+        &.img-2 {
+          background: url("../assets/home/tablet/beautiful-stories.jpg");
+          background-size: cover;
+          background-position: left;
+        }
+        &.img-3 {
+          background: url("../assets/home/tablet/designed-for-everyone.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+      }
+    }
+  }
+}
+
+//Small Tablets
+@include mediaMd {
+  .intro {
+    .intro-flex-1 {
+      flex-direction: column-reverse;
+    }
+
+    .intro-flex-2 {
+      flex-direction: column-reverse;
+    }
+
+    .intro-flex-3 {
+      flex-direction: column-reverse;
+    }
+
+    .intro-text {
+      width: 100%;
+      padding: 0 5vw;
+      text-align: center;
+
+      &.intro-text-2 {
+        padding: 0 5vw;
+      }
+
+      &.intro-text-3 {
+        padding: 0 5vw;
+      }
+    }
+
+    .intro-img {
+      height: 40em;
+      width: 100%;
+
+      .img {
+        &.img-1 {
+          background: url("../assets/home/mobile/create-and-share.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+        &.img-2 {
+          background: url("../assets/home/mobile/beautiful-stories.jpg");
+          background-size: cover;
+          background-position: left;
+        }
+        &.img-3 {
+          background: url("../assets/home/mobile/designed-for-everyone.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+      }
+    }
+  }
+}
+
+//Smartphones
+@include mediaSm {
+  .intro {
+    .intro-img {
+      height: 25em;
+    }
+  }
+}

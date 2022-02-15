@@ -233,14 +233,19 @@ a {
   grid-template-columns: repeat(4, 1fr); }
   .stories .story {
     height: 30em;
-    color: #fff; }
+    color: #fff;
+    transition: all 0.18s ease-out; }
     .stories .story hr {
       width: 100%;
       diplay: block;
       height: 0.08rem;
       background: #404040;
-      margin: 1rem 0;
-      transition: all 0.18s ease-out; }
+      margin: 1rem 0; }
+    .stories .story:hover {
+      transform: translateY(-1.2rem);
+      border-bottom: 0.3rem solid;
+      border-image: linear-gradient(to right, #bc7198 25%, #5a77ff 75%);
+      border-image-slice: 1; }
   .stories .story-overlay {
     height: 100%;
     width: 100%;
@@ -323,9 +328,21 @@ a {
     grid-template-columns: repeat(2, 1fr); }
     .stories .story-overlay {
       padding: 2.25rem 2.8rem; }
+    .stories .story:hover {
+      transform: none;
+      border-bottom: none; }
   .perks {
     flex-direction: column;
-    padding: 0 20vw; } }
+    padding: 0 15vw; }
+    .perks .perk {
+      height: 100%; }
+      .perks .perk:nth-child(1) {
+        margin-top: 7rem;
+        margin-bottom: 1.5rem; }
+      .perks .perk:nth-child(2) {
+        margin-bottom: 2.5rem; }
+      .perks .perk:nth-child(3) {
+        margin-bottom: 7rem; } }
 
 @media screen and (max-width: 767.8px) {
   .intro .intro-flex-1 {

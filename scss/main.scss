@@ -197,6 +197,7 @@ a {
   .story {
     height: 30em;
     color: #fff;
+    @include easeOut;
 
     hr {
       width: 100%;
@@ -204,7 +205,17 @@ a {
       height: 0.08rem;
       background: #404040;
       margin: 1rem 0;
-      @include easeOut;
+    }
+
+    &:hover {
+      transform: translateY(-1.2rem);
+      border-bottom: 0.3rem solid;
+      border-image: linear-gradient(
+        to right,
+        $secondary-color 25%,
+        $tertiary-color 75%
+      );
+      border-image-slice: 1;
     }
   }
 

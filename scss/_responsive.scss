@@ -59,11 +59,35 @@
     .story-overlay {
       padding: 2.25rem 2.8rem;
     }
+
+    .story {
+      &:hover {
+        transform: none;
+        border-bottom: none;
+      }
+    }
   }
 
   .perks {
     flex-direction: column;
-    padding: 0 20vw;
+    padding: 0 15vw;
+
+    .perk {
+      height: 100%;
+
+      &:nth-child(1) {
+        margin-top: 7rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 2.5rem;
+      }
+
+      &:nth-child(3) {
+        margin-bottom: 7rem;
+      }
+    }
   }
 }
 
@@ -84,13 +108,7 @@
 
     .intro-text {
       width: 100%;
-      // padding: 0 2.5rem;
       text-align: center;
-
-      &.intro-text-2,
-      &.intro-text-3 {
-        // padding: 0 2.5rem;
-      }
     }
 
     .intro-img {

@@ -77,15 +77,20 @@
 
       &:nth-child(1) {
         margin-top: 7rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 5rem;
       }
 
       &:nth-child(2) {
-        margin-bottom: 2.5rem;
+        margin-bottom: 5rem;
+
+        .perk-icon {
+          margin-bottom: 3rem;
+          margin-top: 0;
+        }
       }
 
       &:nth-child(3) {
-        margin-bottom: 7rem;
+        margin-bottom: 8rem;
       }
     }
   }
@@ -150,6 +155,28 @@
 
   .stories {
     grid-template-columns: 1fr;
+
+    .mountains {
+      background: url("../assets/stories/mobile/mountains.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .cityscapes {
+      background-size: cover;
+      background-position: center top;
+    }
+
+    .voyage {
+      background: url("../assets/stories/mobile/18-days-voyage.jpg");
+      background-size: cover;
+      background-position: center bottom;
+    }
+
+    .architecturals {
+      background-size: cover;
+      background-position: center center;
+    }
 
     .story-overlay {
       padding: 2.25rem 6vw;

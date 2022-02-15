@@ -132,7 +132,8 @@ h4 {
   h3.xs-heading,
   h4.xs-heading {
     font-size: 0.8rem;
-    line-height: 1.33; }
+    line-height: 1.33;
+    font-weight: normal; }
 
 a {
   color: #000;
@@ -167,6 +168,21 @@ a {
     cursor: pointer; }
   .arrow-btn:hover > .arrow {
     left: 1.5rem; }
+
+.read-story-btn {
+  background: none;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: left;
+  transition: all 0.18s ease-out; }
+  .read-story-btn .arrow-2 {
+    float: right;
+    position: relative;
+    top: 0.2rem; }
+  .read-story-btn:hover {
+    text-decoration: underline;
+    cursor: pointer; }
 
 .intro {
   width: 100%; }
@@ -211,6 +227,77 @@ a {
         background-size: cover;
         background-position: center; }
 
+.stories {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr); }
+  .stories .story {
+    height: 30em;
+    color: #fff;
+    transition: all 0.18s ease-out; }
+    .stories .story hr {
+      width: 100%;
+      diplay: block;
+      height: 0.08rem;
+      background: #404040;
+      margin: 1rem 0; }
+    .stories .story:hover {
+      transform: translateY(-1.2rem);
+      border-bottom: 0.3rem solid;
+      border-image: linear-gradient(to right, #bc7198 25%, #5a77ff 75%);
+      border-image-slice: 1; }
+  .stories .story-overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    padding: 2.25rem 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+  .stories .mountains {
+    background: url("../assets/stories/desktop/mountains.jpg");
+    background-size: cover;
+    background-position: center; }
+  .stories .cityscapes {
+    background: url("../assets/stories/desktop/cityscapes.jpg");
+    background-size: cover;
+    background-position: center; }
+  .stories .voyage {
+    background: url("../assets/stories/desktop/18-days-voyage.jpg");
+    background-size: cover;
+    background-position: center; }
+  .stories .architecturals {
+    background: url("../assets/stories/desktop/architecturals.jpg");
+    background-size: cover;
+    background-position: center; }
+
+.perks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 10vw; }
+  .perks .perk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30em;
+    text-align: center;
+    padding: 1rem; }
+    .perks .perk:nth-child(2) .perk-icon {
+      height: 4em;
+      width: 6em;
+      margin-bottom: 4rem;
+      margin-top: 1rem; }
+  .perks .perk-icon {
+    margin-bottom: 3rem;
+    text-align: justify;
+    height: 6em;
+    width: 6em; }
+  .perks .sm-heading {
+    margin-bottom: 1.25rem; }
+
 @media screen and (max-width: 1170px) {
   header .menu {
     width: 90%;
@@ -232,7 +319,30 @@ a {
   .intro .intro-img .img.img-3 {
     background: url("../assets/home/tablet/designed-for-everyone.jpg");
     background-size: cover;
-    background-position: center; } }
+    background-position: center; }
+  .intro .intro-text {
+    padding: 0 2.8rem; }
+    .intro .intro-text.intro-text-2, .intro .intro-text.intro-text-3 {
+      padding: 0 2.8rem; }
+  .stories {
+    grid-template-columns: repeat(2, 1fr); }
+    .stories .story-overlay {
+      padding: 2.25rem 2.8rem; }
+    .stories .story:hover {
+      transform: none;
+      border-bottom: none; }
+  .perks {
+    flex-direction: column;
+    padding: 0 15vw; }
+    .perks .perk {
+      height: 100%; }
+      .perks .perk:nth-child(1) {
+        margin-top: 7rem;
+        margin-bottom: 1.5rem; }
+      .perks .perk:nth-child(2) {
+        margin-bottom: 2.5rem; }
+      .perks .perk:nth-child(3) {
+        margin-bottom: 7rem; } }
 
 @media screen and (max-width: 767.8px) {
   .intro .intro-flex-1 {
@@ -243,12 +353,7 @@ a {
     flex-direction: column-reverse; }
   .intro .intro-text {
     width: 100%;
-    padding: 0 5vw;
     text-align: center; }
-    .intro .intro-text.intro-text-2 {
-      padding: 0 5vw; }
-    .intro .intro-text.intro-text-3 {
-      padding: 0 5vw; }
   .intro .intro-img {
     height: 40em;
     width: 100%; }
@@ -263,8 +368,16 @@ a {
     .intro .intro-img .img.img-3 {
       background: url("../assets/home/mobile/designed-for-everyone.jpg");
       background-size: cover;
-      background-position: center; } }
+      background-position: center; }
+  .perks {
+    padding: 0 10vw; } }
 
 @media screen and (max-width: 500px) {
   .intro .intro-img {
-    height: 25em; } }
+    height: 25em; }
+  .stories {
+    grid-template-columns: 1fr; }
+    .stories .story-overlay {
+      padding: 2.25rem 6vw; }
+  .perks {
+    padding: 0 5vw; } }

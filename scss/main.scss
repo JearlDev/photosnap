@@ -50,6 +50,7 @@ h4 {
   &.xs-heading {
     font-size: 0.8rem;
     line-height: 1.33;
+    font-weight: normal;
   }
 }
 
@@ -99,6 +100,26 @@ a {
 
   &:hover > .arrow {
     left: 1.5rem;
+  }
+}
+
+.read-story-btn {
+  background: none;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: left;
+  @include easeOut;
+
+  .arrow-2 {
+    float: right;
+    position: relative;
+    top: 0.2rem;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
   }
 }
 
@@ -164,6 +185,100 @@ a {
         background-position: center;
       }
     }
+  }
+}
+
+//Stories Section
+.stories {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+
+  .story {
+    height: 30em;
+    color: #fff;
+
+    hr {
+      width: 100%;
+      diplay: block;
+      height: 0.08rem;
+      background: #404040;
+      margin: 1rem 0;
+      @include easeOut;
+    }
+  }
+
+  .story-overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.253);
+    background-blend-mode: overlay;
+    padding: 2.25rem 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .mountains {
+    background: url("../assets/stories/desktop/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .cityscapes {
+    background: url("../assets/stories/desktop/cityscapes.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .voyage {
+    background: url("../assets/stories/desktop/18-days-voyage.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .architecturals {
+    background: url("../assets/stories/desktop/architecturals.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+//perks section
+.perks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 10vw;
+
+  .perk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30em;
+    text-align: center;
+    padding: 1rem;
+
+    &:nth-child(2) {
+      .perk-icon {
+        height: 4em;
+        width: 6em;
+        margin-bottom: 4rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  .perk-icon {
+    margin-bottom: 3rem;
+    text-align: justify;
+    height: 6em;
+    width: 6em;
+  }
+
+  .sm-heading {
+    margin-bottom: 1.25rem;
   }
 }
 

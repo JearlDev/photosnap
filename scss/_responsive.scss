@@ -42,6 +42,28 @@
         }
       }
     }
+
+    .intro-text {
+      padding: 0 2.8rem;
+
+      &.intro-text-2,
+      &.intro-text-3 {
+        padding: 0 2.8rem;
+      }
+    }
+  }
+
+  .stories {
+    grid-template-columns: repeat(2, 1fr);
+
+    .story-overlay {
+      padding: 2.25rem 2.8rem;
+    }
+  }
+
+  .perks {
+    flex-direction: column;
+    padding: 0 20vw;
   }
 }
 
@@ -62,15 +84,12 @@
 
     .intro-text {
       width: 100%;
-      padding: 0 5vw;
+      // padding: 0 2.5rem;
       text-align: center;
 
-      &.intro-text-2 {
-        padding: 0 5vw;
-      }
-
+      &.intro-text-2,
       &.intro-text-3 {
-        padding: 0 5vw;
+        // padding: 0 2.5rem;
       }
     }
 
@@ -97,6 +116,10 @@
       }
     }
   }
+
+  .perks {
+    padding: 0 10vw;
+  }
 }
 
 //Smartphones
@@ -105,5 +128,17 @@
     .intro-img {
       height: 25em;
     }
+  }
+
+  .stories {
+    grid-template-columns: 1fr;
+
+    .story-overlay {
+      padding: 2.25rem 6vw;
+    }
+  }
+
+  .perks {
+    padding: 0 5vw;
   }
 }

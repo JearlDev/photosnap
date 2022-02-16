@@ -17,5 +17,8 @@ function desktopNavToggle() {
 
 function mobileNavToggle(){
   const mobileMenuBtn = document.querySelector('.menu-mobile-btn');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
   mobileMenuBtn.classList.toggle('close');
+  mobileMenu.classList.toggle('show');
 };

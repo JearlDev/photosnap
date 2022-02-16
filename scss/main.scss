@@ -11,6 +11,7 @@ body {
   font-family: "DM Sans", sans-serif;
   font-size: 15px;
   line-height: 1;
+  position: relative;
 }
 
 //paragraphs
@@ -73,6 +74,11 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   @include easeOut;
+
+  &.mobile-cta {
+    height: 2.9rem;
+    width: 100%;
+  }
 
   &:hover {
     background: #dfdfdf;

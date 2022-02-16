@@ -94,6 +94,22 @@
       }
     }
   }
+
+  .main-footer {
+    height: 20em;
+
+    .footer-container {
+      width: 90%;
+    }
+
+    .footer-menu-nav {
+      display: flex;
+      width: 40%;
+      left: 0;
+      bottom: 9.5rem;
+      justify-content: space-between;
+    }
+  }
 }
 
 //Small Tablets
@@ -142,6 +158,43 @@
 
   .perks {
     padding: 0 10vw;
+  }
+
+  .main-footer {
+    height: 33em;
+
+    .footer-container {
+      flex-direction: column;
+
+      .logo-socials {
+        align-items: center;
+
+        .footer-logo {
+          margin-bottom: 2rem;
+        }
+
+        .social-icons {
+          .icon {
+            margin: 0 0.4rem;
+          }
+        }
+      }
+
+      .invite-copyright {
+        align-items: center;
+
+        p {
+          margin-top: 1.5rem;
+        }
+      }
+    }
+
+    .footer-menu-nav {
+      flex-direction: column;
+      align-items: center;
+      bottom: 12.5rem;
+      left: 26vw;
+    }
   }
 }
 

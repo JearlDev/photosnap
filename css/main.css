@@ -87,6 +87,36 @@ header {
         header .menu .menu-mobile-btn.close .btn-line:nth-child(2) {
           transform: rotate(-45deg) translate(2px, -3px); }
 
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+  height: calc(100% - 5rem);
+  background-color: rgba(0, 0, 0, 0.466); }
+  .mobile-menu.show {
+    display: block; }
+  .mobile-menu .mobile-nav-container {
+    width: 100%;
+    height: 19.5em;
+    padding: 1rem 6vw 0 6vw;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+    .mobile-menu .mobile-nav-container .menu-nav {
+      text-transform: uppercase;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 6rem; }
+    .mobile-menu .mobile-nav-container hr {
+      background: rgba(153, 153, 153, 0.418);
+      width: 100%;
+      height: 0.085rem; }
+
 html {
   min-height: 100%; }
 
@@ -95,7 +125,8 @@ body {
   color: #000;
   font-family: "DM Sans", sans-serif;
   font-size: 15px;
-  line-height: 1; }
+  line-height: 1;
+  position: relative; }
 
 p {
   line-height: 1.6; }
@@ -150,6 +181,9 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   transition: all 0.18s ease-out; }
+  .cta-btn.mobile-cta {
+    height: 2.9rem;
+    width: 100%; }
   .cta-btn:hover {
     background: #dfdfdf;
     cursor: pointer;

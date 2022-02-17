@@ -1,6 +1,9 @@
 //Select elements to manipulate
 const menu = document.querySelector('.menu');
 
+//Set Initial State of Menu
+let showMenu = false;
+
 //Add event listeners
 window.addEventListener('load', desktopNavToggle);
 window.addEventListener('resize', desktopNavToggle);
@@ -18,7 +21,23 @@ function desktopNavToggle() {
 function mobileNavToggle(){
   const mobileMenuBtn = document.querySelector('.menu-mobile-btn');
   const mobileMenu = document.querySelector('.mobile-menu');
+  const mobileNavContainer = document.querySelector('.mobile-nav-container');
 
-  mobileMenuBtn.classList.toggle('close');
-  mobileMenu.classList.toggle('show');
+  if(!showMenu){
+    mobileMenuBtn.classList.add('close');
+    mobileMenu.classList.add('show');
+    mobileNavContainer.classList.add('show');
+
+    //Set Menu State
+    showMenu = true;
+  } else {
+    mobileMenuBtn.classList.remove('close');
+    mobileMenu.classList.remove('show');
+    mobileNavContainer.classList.remove('show');
+
+    //Set Menu State
+    showMenu = false;
+  }
+  
+  
 };
